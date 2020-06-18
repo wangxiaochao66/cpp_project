@@ -1,0 +1,28 @@
+﻿  演讲比赛流程管理系统.cpp
+  speechManager.cpp
+f:\cproject\基于stl的演讲比赛流程管理系统\基于stl的演讲比赛流程管理系统\speechmanager.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\numeric(20): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\numeric(30): note: 参见对正在编译的函数 模板 实例化“_Ty std::_Accumulate_unchecked<std::_Deque_unchecked_iterator<_Mydeque>,_Ty,_Fn2>(_InIt,_InIt,_Ty,_Fn2 &)”的引用
+          with
+          [
+              _Ty=float,
+              _Mydeque=std::_Deque_val<std::_Deque_simple_types<double>>,
+              _Fn2=std::plus<void>,
+              _InIt=std::_Deque_unchecked_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\numeric(38): note: 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<_InIt,_Ty,std::plus<void>>(_InIt,_InIt,_Ty,_Fn2)”的引用
+          with
+          [
+              _Ty=float,
+              _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+              _Fn2=std::plus<void>
+          ]
+  f:\cproject\基于stl的演讲比赛流程管理系统\基于stl的演讲比赛流程管理系统\speechmanager.cpp(191): note: 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,float>(_InIt,_InIt,_Ty)”的引用
+          with
+          [
+              _Ty=float,
+              _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
+          ]
+  正在生成代码...
+  基于STL的演讲比赛流程管理系统.vcxproj -> F:\Cproject\基于STL的演讲比赛流程管理系统\Debug\基于STL的演讲比赛流程管理系统.exe
+  基于STL的演讲比赛流程管理系统.vcxproj -> F:\Cproject\基于STL的演讲比赛流程管理系统\Debug\基于STL的演讲比赛流程管理系统.pdb (Partial PDB)
