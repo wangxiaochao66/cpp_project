@@ -1,0 +1,65 @@
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_ate.py groundtruth.txt CameraTrajectory.txt --plot 相机轨迹误差1
+.png
+0.851018
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_ate.py groundtruth.txt CameraTrajectory.txt --verbose
+compared_pose_pairs 826 pairs
+absolute_translational_error.rmse 0.851018 m
+absolute_translational_error.mean 0.733954 m
+absolute_translational_error.median 0.607633 m
+absolute_translational_error.std 0.430747 m
+absolute_translational_error.min 0.124072 m
+absolute_translational_error.max 1.933369 m
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_rpe.py groundtruth.txt CameraTrajectory.txt --plot 相机轨迹误差2
+.png --fixed_delta
+0.3031257480555795
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_rpe.py groundtruth.txt CameraTrajectory.txt --verbose
+compared_pose_pairs 9983 pairs
+translational_error.rmse 1.302528 m
+translational_error.mean 1.070766 m
+translational_error.median 0.962882 m
+translational_error.std 0.741645 m
+translational_error.min 0.000000 m
+translational_error.max 3.202249 m
+rotational_error.rmse 24.539918 deg
+rotational_error.mean 20.163039 deg
+rotational_error.median 17.845955 deg
+rotational_error.std 13.987831 deg
+rotational_error.min 0.000000 deg
+rotational_error.max 61.182404 deg
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_ate.py groundtruth.txt KeyFrameTrajectory.txt --plot 关键帧轨迹 
+误差3.png
+0.828301
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_ate.py groundtruth.txt KeyFrameTrajectory.txt --verbose
+compared_pose_pairs 426 pairs
+absolute_translational_error.rmse 0.828301 m
+absolute_translational_error.mean 0.706220 m
+absolute_translational_error.median 0.595369 m
+absolute_translational_error.std 0.432822 m
+absolute_translational_error.min 0.090087 m
+absolute_translational_error.max 2.068064 m
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_rpe.py groundtruth.txt KeyFrameTrajectory.txt --plot 关键帧轨迹 
+误差4.png --fixed_delta
+0.29871132433507697
+wangzi@wangzi:~/桌面/实验结果/PSP/rgbd_dataset_freiburg3_walking_xyz/ORB SLAM2
+$ python evaluate_rpe.py groundtruth.txt KeyFrameTrajectory.txt --verbose
+compared_pose_pairs 9958 pairs
+translational_error.rmse 1.293553 m
+translational_error.mean 1.052343 m
+translational_error.median 0.902612 m
+translational_error.std 0.752234 m
+translational_error.min 0.000000 m
+translational_error.max 3.232274 m
+rotational_error.rmse 24.293023 deg
+rotational_error.mean 19.733538 deg
+rotational_error.median 16.474452 deg
+rotational_error.std 14.168220 deg
+rotational_error.min 0.000000 deg
+rotational_error.max 61.045038 deg
+

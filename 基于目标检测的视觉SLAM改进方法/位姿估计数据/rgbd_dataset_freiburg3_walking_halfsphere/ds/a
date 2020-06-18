@@ -1,0 +1,65 @@
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_ate.py groundtruth.txt CameraTrajectory.txt --plot 相机轨迹误差1
+.png
+0.029476
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_ate.py groundtruth.txt CameraTrajectory.txt --verbose
+compared_pose_pairs 1018 pairs
+absolute_translational_error.rmse 0.029476 m
+absolute_translational_error.mean 0.025148 m
+absolute_translational_error.median 0.021268 m
+absolute_translational_error.std 0.015376 m
+absolute_translational_error.min 0.001634 m
+absolute_translational_error.max 0.151905 m
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_rpe.py groundtruth.txt CameraTrajectory.txt --plot 相机轨迹误差2
+.png --fixed_delta
+0.028471008437429477
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_rpe.py groundtruth.txt CameraTrajectory.txt --verbose
+compared_pose_pairs 9953 pairs
+translational_error.rmse 0.043032 m
+translational_error.mean 0.037547 m
+translational_error.median 0.033936 m
+translational_error.std 0.021024 m
+translational_error.min 0.000000 m
+translational_error.max 0.168589 m
+rotational_error.rmse 1.000006 deg
+rotational_error.mean 0.901404 deg
+rotational_error.median 0.849935 deg
+rotational_error.std 0.432992 deg
+rotational_error.min 0.000000 deg
+rotational_error.max 3.887738 deg
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_ate.py groundtruth.txt KeyFrameTrajectory.txt --plot 关键帧轨迹 
+误差3.png
+0.027377
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_ate.py groundtruth.txt KeyFrameTrajectory.txt --verbose
+compared_pose_pairs 92 pairs
+absolute_translational_error.rmse 0.027377 m
+absolute_translational_error.mean 0.024786 m
+absolute_translational_error.median 0.022716 m
+absolute_translational_error.std 0.011626 m
+absolute_translational_error.min 0.004439 m
+absolute_translational_error.max 0.054657 m
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_rpe.py groundtruth.txt KeyFrameTrajectory.txt --plot 关键帧轨迹 
+误差4.png --fixed_delta
+0.025245021574399444
+wangzi@wangzi:~/桌面/实验结果/PSA/rgbd_dataset_freiburg3_walking_halfsphere/ds
+$ python evaluate_rpe.py groundtruth.txt KeyFrameTrajectory.txt --verbose
+compared_pose_pairs 8464 pairs
+translational_error.rmse 0.044445 m
+translational_error.mean 0.039369 m
+translational_error.median 0.035932 m
+translational_error.std 0.020626 m
+translational_error.min 0.000000 m
+translational_error.max 0.117008 m
+rotational_error.rmse 1.014497 deg
+rotational_error.mean 0.917412 deg
+rotational_error.median 0.872891 deg
+rotational_error.std 0.433080 deg
+rotational_error.min 0.000000 deg
+rotational_error.max 3.167883 deg
+
